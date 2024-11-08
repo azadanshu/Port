@@ -191,20 +191,11 @@ window.addEventListener('resize', windowResize);
 document.getElementById('resume-button-2').onclick = () => {
   // Delay the download event by 3 seconds
   window.open(
-    "https://drive.google.com/file/d/1Rifu6OmlLSG5Go1WGh9jjLxh33B5RDSK/view?usp=drive_link"
+    "https://drive.google.com/file/d/1pBxJYcBxcD_Juv_23eGNVRVJdFF9qYTU/view?usp=drive_link"
   ),
     setTimeout(() => {
       // Trigger the download after the delay (replace 'resume-link-2' with your actual element ID)
       document.getElementById('resume-link-2').click();
     }, 1000);
 };
-// document.getElementById("Resume").onclick = () => {
-//   // Delay the download event by 3 seconds
-//   window.open(
-//     "https://drive.google.com/file/d/14s1Gd-HQYLgBfbP-qUYYc_x0ba35_k3n/view?usp=sharing"
-//   ),
-//     setTimeout(() => {
-//       // Trigger the download after the delay (replace 'resume-link-2' with your actual element ID)
-//       document.getElementById("Resume").click();
-//     });
-// };
+
