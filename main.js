@@ -102,7 +102,7 @@ window.addEventListener('scroll', () => {
     }
   })
 })
-console.log('%c Designed and Developed by Alipa', 'background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;');
+console.log('%c Designed and Developed by Md Azad Ansari', 'background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;');
 
 
 

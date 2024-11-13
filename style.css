@@ -457,7 +457,7 @@ noscript {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 95vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1078,7 +1078,7 @@ noscript {
 .project-box {
   background-color: rgba(255, 255, 255, 0.005);
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1208,9 +1208,12 @@ noscript {
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
-.cta:hover:before {
+
+
+/* ----------before scene on hovering---------- */
+
+/* .cta:hover:before {
   width: 100%;
-  /* background: #b1dae7; */
 }
 .cta:hover span {
   color: white;
@@ -1220,6 +1223,29 @@ noscript {
 }
 
 .cta:hover svg {
+  transform: translateX(0);
+} */
+
+/* ----------After scene on hovering on both cta & ctaspan2---------- */
+
+.cta:hover:before,
+.ctaspan2:hover:before {
+  width: 100%;
+  /* background: #b1dae7; */
+}
+
+.cta:hover span,
+.ctaspan2:hover span {
+  color: white;
+}
+
+.cta:hover svg,
+.ctaspan2:hover svg {
+  stroke: white;
+}
+
+.cta:hover svg,
+.ctaspan2:hover svg {
   transform: translateX(0);
 }
 
@@ -1742,6 +1768,7 @@ noscript {
 
   .projects-section-div {
     width: 80%;
+    height: auto;
   }
   .project-boxes-div {
     padding: 40px 0;
@@ -1775,17 +1802,17 @@ noscript {
   #hello-friend {
     font-size: 2.5rem;
   }
-  .landing-page-container {
-    height: 85vh;
-  }
+  /* .landing-page-container {
+    height: auto;
+  } */
   .project-box {
-    height: 550px;
+    height: auto;
   }
   .info-div {
     height: 60%;
   }
   .image-div {
-    height: 40%;
+    height: auto;
     /* padding-left: 50px; */
   }
 }
@@ -2137,6 +2164,96 @@ noscript {
   .GithubHeadingP {
     width: 50%;
   }
+  .react-activity-calendar {
+    height: auto;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+  }
+  .react-activity-calendar img {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+}
+/* Responsive styles for screens between 444px and 0px */
+@media screen and (max-width: 444px) and (min-width: 0px) {
+  .project3 {
+    font-size: 10px;
+  }
+  .project-box {
+    flex-direction: column;
+    height: auto; /* Allow the height to be determined by content */
+    padding: 20px; /* Add padding for better spacing */
+    margin: 15px 0; /* Add margin for separation between project boxes */
+  }
+
+  .info-div {
+    width: 100%; /* Use full width for text content */
+    padding: 10px 20px; /* Reduce padding for better fit on narrow screens */
+    gap: 10px; /* Smaller gap between elements */
+  }
+
+  .ProjectHeading {
+    font-size: 2.2rem; /* Reduce font size */
+  }
+
+  .ProjectDescription {
+    font-size: 1.6rem; /* Reduce font size for better readability */
+    line-height: 1.4; /* Adjust line-height */
+  }
+
+  .cta,
+  .ctaspan2 {
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 1.4rem; /* Reduce button font size */
+  }
+
+  .image-div {
+    width: 100%; /* Make images take full width */
+    height: auto; /* Allow height to scale naturally */
+    margin-top: 10px; /* Add margin for separation */
+  }
+
+  .image-div img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    object-fit: cover; /* Ensure proper scaling of images */
+  }
+
+  .project3 {
+    font-size: 1.4rem; /* Adjust tech tag size */
+    text-align: center; /* Center align for a neat look */
+  }
+  .about-heading {
+    margin-top: 50%;
+  }
+  .letsTalkBtn {
+    width: 120px;
+  }
+  .Contact-heading {
+    width: 88%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 30px;
+    /* padding-top: 70px; */
+    /* padding-bottom: 70px; */
+  }
+  .ContactHeadingP {
+    width: 300px;
+    height: 1px;
+  }
+  /* .Contactsection .Contact-content .row{
+    margin: auto;
+  } */
+  .Contactsection .Contact-content .row {
+    padding-left: 50%;
+  }
+
 }
 /* Contact */
 
@@ -2233,37 +2350,4 @@ noscript {
   .Contactsection .Contact-content .row {
     padding-left: 130px;
   }
-}
-
-/* Responsive styles for screens between 444px and 0px */
-@media screen and (max-width: 444px) and (min-width: 0px) {
-  .project3 {
-    font-size: 10px;
-  }
-  .about-heading {
-    margin-top: 50%;
-  }
-  .letsTalkBtn {
-    width: 120px;
-  }
-  .Contact-heading {
-    width: 88%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 30px;
-    /* padding-top: 70px; */
-    /* padding-bottom: 70px; */
-  }
-  .ContactHeadingP {
-    width: 300px;
-    height: 1px;
-  }
-  /* .Contactsection .Contact-content .row{
-    margin: auto;
-  } */
-  .Contactsection .Contact-content .row {
-    padding-left: 50%;
-  }
-
 }
