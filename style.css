@@ -1980,14 +1980,6 @@ noscript {
   .projectcards .textProject {
     display: block;
   }
-  /* .Contact-heading {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 70px;
-    padding-bottom: 30px;
-  } */
   .textProject {
     width: 100%;
   }
@@ -2021,7 +2013,8 @@ noscript {
     align-items: center;
     gap: 10px;
     padding-left: 70px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 0px;
   }
   #statssecondcolumn img {
     margin-bottom: 4px;
@@ -2179,82 +2172,7 @@ noscript {
   }
 
 }
-/* Responsive styles for screens between 444px and 0px */
-@media screen and (max-width: 444px) and (min-width: 0px) {
-  .project3 {
-    font-size: 10px;
-  }
-  .project-box {
-    flex-direction: column;
-    height: auto; /* Allow the height to be determined by content */
-    padding: 20px; /* Add padding for better spacing */
-    margin: 15px 0; /* Add margin for separation between project boxes */
-  }
 
-  .info-div {
-    width: 100%; /* Use full width for text content */
-    padding: 10px 20px; /* Reduce padding for better fit on narrow screens */
-    gap: 10px; /* Smaller gap between elements */
-  }
-
-  .ProjectHeading {
-    font-size: 2.2rem; /* Reduce font size */
-  }
-
-  .ProjectDescription {
-    font-size: 1.6rem; /* Reduce font size for better readability */
-    line-height: 1.4; /* Adjust line-height */
-  }
-
-  .cta,
-  .ctaspan2 {
-    padding: 10px 15px; /* Adjust button padding */
-    font-size: 1.4rem; /* Reduce button font size */
-  }
-
-  .image-div {
-    width: 100%; /* Make images take full width */
-    height: auto; /* Allow height to scale naturally */
-    margin-top: 10px; /* Add margin for separation */
-  }
-
-  .image-div img {
-    width: 100%; /* Make images responsive */
-    height: auto;
-    object-fit: cover; /* Ensure proper scaling of images */
-  }
-
-  .project3 {
-    font-size: 1.4rem; /* Adjust tech tag size */
-    text-align: center; /* Center align for a neat look */
-  }
-  .about-heading {
-    margin-top: 50%;
-  }
-  .letsTalkBtn {
-    width: 120px;
-  }
-  .Contact-heading {
-    width: 88%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 30px;
-    /* padding-top: 70px; */
-    /* padding-bottom: 70px; */
-  }
-  .ContactHeadingP {
-    width: 300px;
-    height: 1px;
-  }
-  /* .Contactsection .Contact-content .row{
-    margin: auto;
-  } */
-  .Contactsection .Contact-content .row {
-    padding-left: 50%;
-  }
-
-}
 /* Contact */
 
 .Contact-heading {
@@ -2335,13 +2253,14 @@ noscript {
     margin-top: 10%;
   }
   .Contact-heading {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-left: 41px;
-    /* padding-top: 70px; */
-    /* padding-bottom: 70px; */
+    padding-left: 70px;
+    padding-right: 55px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   .ContactHeadingP {
     width: 300px;
@@ -2350,4 +2269,80 @@ noscript {
   .Contactsection .Contact-content .row {
     padding-left: 130px;
   }
+}
+
+/* Responsive styles for screens between 444px and 0px */
+@media screen and (max-width: 444px) and (min-width: 0px) {
+  .project3 {
+    font-size: 10px;
+  }
+  .project-box {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin: 15px 0; /* Add margin for separation between project boxes */
+  }
+
+  .info-div {
+    width: 100%; /* Use full width for text content */
+    padding: 10px 20px; /* Reduce padding for better fit on narrow screens */
+    gap: 10px; /* Smaller gap between elements */
+  }
+
+  .ProjectHeading {
+    font-size: 2.2rem; /* Reduce font size */
+  }
+
+  .ProjectDescription {
+    font-size: 1.6rem; /* Reduce font size for better readability */
+    line-height: 1.4; /* Adjust line-height */
+  }
+
+  .cta,
+  .ctaspan2 {
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 1.4rem; /* Reduce button font size */
+  }
+
+  .image-div {
+    width: 100%; /* Make images take full width */
+    height: auto; /* Allow height to scale naturally */
+    margin-top: 10px; /* Add margin for separation */
+  }
+
+  .image-div img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    object-fit: cover; /* Ensure proper scaling of images */
+  }
+
+  .project3 {
+    font-size: 1.4rem; /* Adjust tech tag size */
+    text-align: center; /* Center align for a neat look */
+  }
+  .about-heading {
+    margin-top: 50%;
+  }
+  .letsTalkBtn {
+    width: 120px;
+  }
+  
+  .Contact-heading {
+    width: 88%;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .ContactHeadingP {
+    width: 300px;
+    height: 1px;
+  }
+
+  .Contactsection .Contact-content .row {
+    padding-left: 40%;
+  }
+
 }
